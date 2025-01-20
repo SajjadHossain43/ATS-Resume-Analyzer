@@ -23,7 +23,7 @@ class ATSAnalyzer:
     @staticmethod
     def extract_text_from_pdf(uploaded_file):
         try:
-            pdf_reader = PdfReader(uploaded_file)
+            pdf_reader = PdfReader(uploaded_file) #s
             text = ""
             for page in pdf_reader.pages:
                 text += page.extract_text()

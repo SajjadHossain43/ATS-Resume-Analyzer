@@ -6,7 +6,7 @@ from PyPDF2 import PdfReader
 import google.generativeai as genai
 import time
 
-# Configure Gemini AI hello
+# Configure Gemini AI Yellow hello
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 class ATSAnalyzer:

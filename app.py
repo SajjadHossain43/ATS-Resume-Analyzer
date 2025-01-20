@@ -14,7 +14,7 @@ class ATSAnalyzer:
     def get_gemini_response(input_prompt, pdf_text, job_description):
         try:
             model = genai.GenerativeModel('gemini-2.0-flash-exp') #
-            response = model.generate_content([input_prompt, pdf_text, job_description]) ####
+            response = model.generate_content([input_prompt, pdf_text, job_description]) # ####
             return response.text #
         except Exception as e:
             st.error(f"Error generating response: {str(e)}")
